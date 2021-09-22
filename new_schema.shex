@@ -1,0 +1,18 @@
+PREFIX ods: <http://github.com/hardistyar/openDS/ods-ontology/terms/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+start = @<OdsShape>  # Issue validation starts with <OdsShape>
+
+<OdsShape> {
+  ods:identifier xsd:string?,
+  ods:authoritative @<AuthoritativeShape>
+}
+
+<AuthoritativeShape> {
+  ods:midsLevel xsd:integer MinInclusive 0 MaxInclusive 2,
+  ods:name xsd:string,
+  ods:curatedObjectID xsd:string,
+  ods:materialType xsd:string?,
+  ods:institution xsd:string?
+}
