@@ -1,0 +1,31 @@
+PREFIX ods: <http://github.com/hardistyar/openDS/ods-ontology/terms/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+start = @<OdsShape>
+
+<authoritativeShape> {
+(    ods:materialType xsd:string?;
+      ods:name xsd:string?;
+      ods:midsLevel xsd:integer mininclusive 0 maxinclusive 3;
+      ods:curatedObjectID xsd:string;
+      ods:institution xsd:string;
+      ods:institutionCode xsd:string)
+}
+
+<imagesShape> {
+(    ods:imageWidth xsd:integer?;
+      ods:imageHeight xsd:integer?;
+      ods:colorSpace xsd:string?;
+      ods:iccProfileName xsd:string?;
+      ods:xResolution xsd:integer?;
+      ods:yResolution xsd:integer?;
+      ods:creator xsd:string?;
+      ods:imageResultionUnit xsd:string?;
+      ods:imageSizeUnit xsd:string?;
+      ods:imageURI xsd:string)
+}
+<OdsShape> {
+(    ods:authoritative @<authoritativeShape>;
+      ods:images @<imagesShape>{0,};
+      ods:identifier xsd:string?)
+}

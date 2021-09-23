@@ -1,1 +1,32 @@
-{"head": {"vars": ["section", "sectionLabel", "item", "itemLabel", "itemDescription", "example", "dataType", "min", "max"]}, "results": {"bindings": [{"item": {"type": "uri", "value": "http://wikibase.svc/entity/Q35"}, "itemLabel": {"xml:lang": "en", "type": "literal", "value": "identifier"}, "itemDescription": {"xml:lang": "en", "type": "literal", "value": "An unambiguous reference to the resource within a given context."}, "example": {"type": "literal", "value": "https://dx.doi.org/10.15156/BIO/TH005120"}}, {"item": {"type": "uri", "value": "http://wikibase.svc/entity/Q23"}, "itemLabel": {"xml:lang": "en", "type": "literal", "value": "midsLevel"}, "itemDescription": {"xml:lang": "en", "type": "literal", "value": "Integer value that defines the given MIDS level of the digital specimen"}, "section": {"type": "uri", "value": "http://wikibase.svc/entity/Q28"}, "dataType": {"type": "literal", "value": "xsd:integer"}, "min": {"datatype": "http://www.w3.org/2001/XMLSchema#decimal", "type": "literal", "value": "0"}, "max": {"datatype": "http://www.w3.org/2001/XMLSchema#decimal", "type": "literal", "value": "3"}, "sectionLabel": {"xml:lang": "en", "type": "literal", "value": "authorative"}}, {"item": {"type": "uri", "value": "http://wikibase.svc/entity/Q24"}, "itemLabel": {"xml:lang": "en", "type": "literal", "value": "curatedObjectID"}, "itemDescription": {"xml:lang": "en", "type": "literal", "value": "identifier for the curated tangible thing (visible, touchable, audible or smellable), for example a sample of some material, a sound recording or a digital image"}, "example": {"type": "literal", "value": "NHMUK010517563"}, "section": {"type": "uri", "value": "http://wikibase.svc/entity/Q28"}, "sectionLabel": {"xml:lang": "en", "type": "literal", "value": "authorative"}}, {"item": {"type": "uri", "value": "http://wikibase.svc/entity/Q26"}, "itemLabel": {"xml:lang": "en", "type": "literal", "value": "institution"}, "section": {"type": "uri", "value": "http://wikibase.svc/entity/Q28"}, "sectionLabel": {"xml:lang": "en", "type": "literal", "value": "authorative"}}, {"item": {"type": "uri", "value": "http://wikibase.svc/entity/Q27"}, "itemLabel": {"xml:lang": "en", "type": "literal", "value": "materialType"}, "section": {"type": "uri", "value": "http://wikibase.svc/entity/Q28"}, "sectionLabel": {"xml:lang": "en", "type": "literal", "value": "authorative"}}, {"item": {"type": "uri", "value": "http://wikibase.svc/entity/Q32"}, "itemLabel": {"xml:lang": "en", "type": "literal", "value": "institutionCode"}, "itemDescription": {"xml:lang": "en", "type": "literal", "value": "label to identify an instittution as used in GrSciColl"}, "section": {"type": "uri", "value": "http://wikibase.svc/entity/Q28"}, "sectionLabel": {"xml:lang": "en", "type": "literal", "value": "authorative"}}]}}
+{
+  "id": "20.5000.1025/ae88bb3a666ec72dbc52",
+  "typeName": "ODStype1804",
+  "@context": {
+    "ods": "http://github.com/hardistyar/openDS/ods-ontology/terms/"
+  },
+  "@graph": [
+    {
+      "@id": "https://doi.org/20.5000.1025/ae88bb3a666ec72dbc52",
+      "ods:authoritative": {
+        "ods:midsLevel": 1,
+        "ods:curatedObjectID": "NHMUK010517563",
+        "ods:institution": "https://ror.org/039zvsn29",
+        "ods:institutionCode": "NHMUK",
+        "ods:materialType": "Dry - pinned",
+        "ods:name": "Elophila nymphaeata (Linnaeus, 1758)"
+      },
+        "ods:images": {
+            "ods:imageURI": "https://example.org/7870917_5bb2274d436ebab560cb85b83ba21d89fa8bc065.jpg",
+            "ods:imageWidth": 400,
+            "ods:imageHeight": 280,
+            "ods:imageSizeUnit" : "pixel",
+            "ods:colorSpace": "",
+            "ods:iccProfileName": "",
+            "ods:xResolution": 0,
+            "ods:yResolution": 0,
+            "ods.imageResolutionUnit": "pixel",
+            "ods:creator": ""
+        }
+    }
+  ]
+}
