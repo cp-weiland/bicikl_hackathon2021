@@ -1,0 +1,20 @@
+{
+  "id": "20.5000.1025/ae88bb3a666ec72dbc52",
+  "typeName": "ODStype1804",
+  "@context": {
+    "ods": "http://github.com/hardistyar/openDS/terms/"
+  },
+  "@graph": [
+    {
+      "@id": "https://doi.org/20.5000.1025/ae88bb3a666ec72dbc52",
+      "ods:authoritative": {
+        "ods:modified": "2021-06-17T09:18:02.130Z",
+        "ods:midsLevel": 1,
+        "ods:physicalSpecimenId": "NHMUK010517563",
+        "ods:institution": "https://ror.org/039zvsn29",
+        "ods:materialType": "Dry - pinned",
+        "ods:name": "Elophila nymphaeata (Linnaeus, 1758)"
+      }
+    }
+  ]
+}
